@@ -1,0 +1,23 @@
+{
+  "name": "playwright-lab1",
+  "version": "1.0.0",
+  "description": "CS313 UI Test Lab1",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Monkhtsetsen/playwright-lab1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Monkhtsetsen/playwright-lab1/issues"
+  },
+  "homepage": "https://github.com/Monkhtsetsen/playwright-lab1#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.4.1"
+  }
+}
