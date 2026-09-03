@@ -44,4 +44,11 @@ npx playwright test
 
 # Тайлан харах
 npx playwright show-report
+
+# Хавсаргасан Trace Viewer-ийг үзэх
+npx playwright show-trace test-results/<folder-name>/trace.zip
+
+# Жишээ нь:
+npx playwright show-trace test-results/mytest-sauce-demo-ui-testuud-Amjilttai-nevtreh-chromium/trace.zip
+
 ```
