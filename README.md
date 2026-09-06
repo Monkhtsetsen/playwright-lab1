@@ -2,6 +2,8 @@
 
 Энэ лабораториор Playwright ашиглаад https://www.saucedemo.com сайт дээр UI автомат тестүүд бичиж үзлээ.
 
+# Оюутны нэр, код: Т.Мөнхцэцэн /B232270025/
+
 ## Хийсэн зүйлс
 
 1. WSL (Ubuntu) орчноо бэлдэж Node.js болон Playwright-аа суулгасан. Linux дээр сангууд дутаад байсан тул `npx playwright install-deps` command-р шаардлагатай багцуудыг гүйцээж суулгасан.
@@ -21,11 +23,21 @@ Selenium ашиглахад элемент гарч ирэхийг хүлээх�
 
 Мөн Selenium дээр хөтөч бүрд тохирсон driver суулгаж тохируулдаг бол Playwright дээр ганц command-р бүх browser нь шууд суучихдаг нь их амар санагдлаа. Ялангуяа Trace Viewer нь тест яг ямар алхам дээр унасныг видео болон DOM snapshot-оор нь ухарч харах боломж олгодог тул debug хийхэд Selenium-аас хамаагүй практиктай юм байна. XPath ашиглахаас илүү `getByRole`, `getByPlaceholder` зэрэг хэрэглэгчийн хардаг текстээр элемент олох нь веб хуудасны бүтэц өөрчлөгдөхөд код эвдрэхээс сэргийлнэ.
 
+### XPath-аас яагаад зайлсхийсэн бэ?
+
+Учир нь веб хуудасны DOM бүтэц, HTML tag эсвэл class өөрчлөгдөхөд XPath дээр суурилсан тест шууд унадаг. Тиймээс `getByRole`, `getByPlaceholder`, `getByTestId` зэрэг хэрэглэгчийн дэлгэц дээр харж байгаа бодит элемент дээр тохируулсан locator-уудыг ашигласан.
+
+### Codegen-ийн код миний кодоос юугаараа ялгаатай байсан бэ?
+
+`npx playwright codegen` ажиллуулахад миний хийсэн үйлдэл бүрийг код болгон үүсгэж байсан.
+
 ---
 
 ## Тест ажиллуулсан үр дүн
 
-![alt text](image.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
 
 ## AI туслах ашигласан туршилт ба дүгнэлт
 
@@ -45,10 +57,5 @@ npx playwright test
 # Тайлан харах
 npx playwright show-report
 
-# Хавсаргасан Trace Viewer-ийг үзэх
-npx playwright show-trace test-results/<folder-name>/trace.zip
-
-# Жишээ нь:
-npx playwright show-trace test-results/mytest-sauce-demo-ui-testuud-Amjilttai-nevtreh-chromium/trace.zip
 
 ```
