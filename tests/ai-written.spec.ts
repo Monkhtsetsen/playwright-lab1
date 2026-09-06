@@ -16,7 +16,7 @@ async function login(page: Page, username: string, password: string) {
 
 async function logout(page: Page) {
   await page.getByRole("button", { name: "Open Menu" }).click();
-  const logoutLink = page.getByRole("link", { name: "Logout" });
+  const logoutLink = page.locator('[data-test="logout-sidebar-link"]');
   await expect(logoutLink).toBeVisible();
   await logoutLink.click();
 }
