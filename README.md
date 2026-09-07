@@ -35,9 +35,7 @@ Selenium ашиглахад элемент гарч ирэхийг хүлээх�
 
 ## Тест ажиллуулсан үр дүн
 
-![alt text](image-2.png)
-![alt text](image-3.png)
-![alt text](image-4.png)
+![alt text](image-5.png)
 
 ## AI туслах ашигласан туршилт ба дүгнэлт
 
