@@ -8,9 +8,7 @@ test.describe("sauce demo ui testuud: ", () => {
     await page.getByPlaceholder("Password").fill("secret_sauce");
     await page.getByRole("button", { name: "Login" }).click();
 
-    await expect(
-      page.getByText("wrong product", { exact: true }),
-    ).toBeVisible();
+    await expect(page.getByText("Products", { exact: true })).toBeVisible();
     await expect(page).toHaveURL("https://www.saucedemo.com/inventory.html");
 
     await page.getByRole("button", { name: "Open Menu" }).click();

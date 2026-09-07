@@ -55,8 +55,8 @@ npm install
 npx playwright test
 
 # Тайлан харах
-npx playwright show-trace docs/trace.zip
-
+npx playwright show-trace docs/login-pass-trace.zip
+npx playwright show-trace docs/login-failed-trace.zip
 
 
 ```
